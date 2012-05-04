@@ -1,101 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>(( overtone sketchpad ) blog)</title>
-  <meta name="author" content="Jon Rose">
-
-  
-  <meta name="description" content="Google Summer of Code 2012
-Clojure/dev proposal for Overtone Jon Rose
-jonrose08@gmail.com Project: Clojure/Dev: Lightweight Clojure editor,repl, and &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://ghostandthemachine.github.com/overtone-sketchpad">
-  <link href="/overtone-sketchpad/favicon.png" rel="icon">
-  <link href="/overtone-sketchpad/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/overtone-sketchpad/javascripts/modernizr-2.0.js"></script>
-  <script src="/overtone-sketchpad/javascripts/ender.js"></script>
-  <script src="/overtone-sketchpad/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/overtone-sketchpad/atom.xml" rel="alternate" title="(( overtone sketchpad ) blog)" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/overtone-sketchpad/">(( overtone sketchpad ) blog)</a></h1>
-  
-    <h2>updates and thoughts on the GSoC overtone sketchpad project</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/overtone-sketchpad/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:ghostandthemachine.github.com/overtone-sketchpad" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/overtone-sketchpad/">Blog</a></li>
-  <li><a href="/overtone-sketchpad/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[(( overtone sketchpad ) blog)]]></title>
+  <link href="http://ghostandthemachine.github.com/overtone-sketchpad/atom.xml" rel="self"/>
+  <link href="http://ghostandthemachine.github.com/overtone-sketchpad/"/>
+  <updated>2012-05-04T10:49:47-07:00</updated>
+  <id>http://ghostandthemachine.github.com/overtone-sketchpad/</id>
+  <author>
+    <name><![CDATA[Jon Rose]]></name>
     
-      <h1 class="entry-title"><a href="/overtone-sketchpad/blog/2012/05/04/gsoc-proposal/">GSoC Proposal</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-05-04T10:47:00-07:00" pubdate data-updated="true">May 4<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Google Summer of Code 2012
+  <entry>
+    <title type="html"><![CDATA[GSoC Proposal]]></title>
+    <link href="http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/04/gsoc-proposal/"/>
+    <updated>2012-05-04T10:47:00-07:00</updated>
+    <id>http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/04/gsoc-proposal</id>
+    <content type="html"><![CDATA[<p>Google Summer of Code 2012
 Clojure/dev proposal for Overtone</p>
 
 <p>Jon Rose
@@ -150,159 +73,20 @@ much time away from Summer of Code.</p>
 [11] https://github.com/overtone/overtone/blob/master/src/overtone/gui/stepinator.clj
 [12] https://github.com/overtone/overtone/blob/master/src/overtone/gui/dial.clj
 [13] https://github.com/overtone/overtone/blob/master/examples/guitar.clj</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/overtone-sketchpad/blog/2012/05/03/gsoc-project-accepted/">GSoC Project Accepted</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-03T17:24:00-07:00" pubdate data-updated="true">May 3<span>rd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>A little over a month ago I submitted my proposal to the Google Summer of Code program through the Clojure/dev organization. After many discussions with the Overtone mentors (<a href="http://lifeisagraph.com/">Jeff Rose</a> and <a href="http://sam.aaron.name/">Sam Aaron</a>) about what sorts of features would be needed and what other open source projects could be utilized to make the Overtone sketchpad a reality I was excited at the prospect of working on such a cool and useful project. During this discussion phase I also gave a short Overtone <a href="http://chicoteam.wordpress.com/2012/02/20/overtone-workshop/">talk</a> to my school&#8217;s <a href="http://chicoteam.wordpress.com/">Open Source Team</a> which provided some of the most useful information about what would be most valuable to get the project off the ground. The biggest hurdle was everyone getting a working Overtone dev environment on various Linux distributions, OSX, and yes, some Windows.</p>
+  <entry>
+    <title type="html"><![CDATA[GSoC Project Accepted]]></title>
+    <link href="http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/03/gsoc-project-accepted/"/>
+    <updated>2012-05-03T17:24:00-07:00</updated>
+    <id>http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/03/gsoc-project-accepted</id>
+    <content type="html"><![CDATA[<p>A little over a month ago I submitted my proposal to the Google Summer of Code program through the Clojure/dev organization. After many discussions with the Overtone mentors (<a href="http://lifeisagraph.com/">Jeff Rose</a> and <a href="http://sam.aaron.name/">Sam Aaron</a>) about what sorts of features would be needed and what other open source projects could be utilized to make the Overtone sketchpad a reality I was excited at the prospect of working on such a cool and useful project. During this discussion phase I also gave a short Overtone <a href="http://chicoteam.wordpress.com/2012/02/20/overtone-workshop/">talk</a> to my school&#8217;s <a href="http://chicoteam.wordpress.com/">Open Source Team</a> which provided some of the most useful information about what would be most valuable to get the project off the ground. The biggest hurdle was everyone getting a working Overtone dev environment on various Linux distributions, OSX, and yes, some Windows.</p>
 
 <p>In the midst of an insanely busy week of finals preparation, moving, and wrapping up final spring projects in Compliers and Operating Systems, I received an email stating that the project had been accepted. I can&#8217;t say enough about how grateful I am to the Google Summer of Code program and most of all to the Clojure/dev team for the opportunity.</p>
 
 <p>Looking ahead, I will begin working on the project full speed starting in a couple weeks but in the mean time I will be working with the mentors to iron out the summer&#8217;s development road map and hopefully get feedback from the Overtone and Clojure community on what they think should be incorporated into the project. If you have any suggestions for features or general thoughts on the project please comment here or consider adding to the project <a href="https://github.com/ghostandthemachine/overtone-sketchpad/wiki/Suggestions-and-Feature-Requests">wiki</a>.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/overtone-sketchpad/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/overtone-sketchpad/blog/2012/05/04/gsoc-proposal/">GSoC Proposal</a>
-      </li>
-    
-      <li class="post">
-        <a href="/overtone-sketchpad/blog/2012/05/03/gsoc-project-accepted/">GSoC Project Accepted</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/ghostandthemachine">@ghostandthemachine</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'ghostandthemachine',
-            count: 38,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/overtone-sketchpad/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Jon Rose -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
