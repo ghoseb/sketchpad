@@ -4,7 +4,7 @@
   <title><![CDATA[(( overtone sketchpad ) blog)]]></title>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/atom.xml" rel="self"/>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/"/>
-  <updated>2012-05-06T10:05:15-07:00</updated>
+  <updated>2012-05-06T10:06:13-07:00</updated>
   <id>http://ghostandthemachine.github.com/overtone-sketchpad/</id>
   <author>
     <name><![CDATA[Jon Rose]]></name>
@@ -44,7 +44,7 @@ The third focus point will be to incorporate functional documentation into the p
 
 <h4>To what extent are you familiar</h4>
 
-<p>with the software you&#8217;re proposing to work with?</p>
+<p>with the software you&#8217;re proposing to work with? ####</p>
 
 <p>The features of Overtone that I’ve worked with, like creating GUI components in Clojure using Seesaw and organizing Overtone documentation have given me a valuable perspective on what it would take to realistically complete this project. Additionally, my experience using Overtone to create sound in fun ways <a href="https://github.com/overtone/overtone/blob/master/examples/guitar.clj">[13]</a> give me a valuable perspective on what users need to focus on being creative. Through discussions on the Overtone mailing list and communication with the project mentors, I have developed a manageable timeline and base of resources to get the project off the ground. With these in place I’ll be able to focus on the central goal of providing a meaningful and intuitive tool for Overtone hackers.</p>
 
@@ -52,7 +52,7 @@ The third focus point will be to incorporate functional documentation into the p
 
 <p>work on this a week? 10? 20? 30? 40? Do you have other commitments that we
 should know about? If so, please suggest a way to compensate if it will take
-much time away from Summer of Code.</p>
+much time away from Summer of Code. ####</p>
 
 <p>I intend to take one math course at Chico State over the summer from 6/04 to 7/12, which is four days a week for 2:45 hours a day. If my proposal is accepted, I would plan to work on it 30+ hours a week.</p>
 
