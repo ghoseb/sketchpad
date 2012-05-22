@@ -242,7 +242,7 @@
 
     ;; docs menu
     (add-menu menu-bar "Documentation" "D"
-      ["Search" "S" "cmd1 shift D" #()]
+      ["Search" "S" "cmd1 shift D" #(doc-browser)]
       ["Browse" "B" "cmd1 shift B" #()]
       ["Examples..." "E" "cmd1 shift E" #()])
     
