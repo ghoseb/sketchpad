@@ -4,7 +4,7 @@
   <title><![CDATA[(( overtone sketchpad ) blog)]]></title>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/atom.xml" rel="self"/>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/"/>
-  <updated>2012-05-06T10:14:43-07:00</updated>
+  <updated>2012-05-22T17:59:50-07:00</updated>
   <id>http://ghostandthemachine.github.com/overtone-sketchpad/</id>
   <author>
     <name><![CDATA[Jon Rose]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Roadmap]]></title>
+    <link href="http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/22/roadmap/"/>
+    <updated>2012-05-22T17:41:00-07:00</updated>
+    <id>http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/22/roadmap</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How It's Made]]></title>
+    <link href="http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/10/how-its-made/"/>
+    <updated>2012-05-10T06:56:00-07:00</updated>
+    <id>http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/10/how-its-made</id>
+    <content type="html"><![CDATA[<p>One of the most exciting things to me, someone who got into programming through processing, is how well systems like lein/cake and repl driven development will help create a dev enviroment ideal for absolute beginners and experienced users alike.</p>
+
+<p><a href="processing.org">Processing</a> provides an environment where a young child could easily enter code to do basic math or string printing and simply hit &#8220;run&#8221;. While Processing targets &#8220;computer fundamentals in a visual context&#8221;, the ease with which users can incorporate external jar files makes it useful beyond just sketching sweet visual fx. Equally important, it allows students to focus on understanding language and design concepts rather than platforms, build processes, and dependencies. Systems like cake and lein will allow users to not have deal with the import process that Processing requires for external libraries minimizing not only the hassle of incorporating external libraries but also keeping the project source format and structure consistent for all users (which in turn makes sharing projects easier and more stable across different operating systems).</p>
+
+<p>I worked a bit with Processing last summer on a <a href="https://github.com/ghostandthemachine/DroidGraphProcessing">3D scene graph</a> project for Android and spent a bit of time digging through the source and I think it would be helpful to take a quick look at the Processing projects design [1]. Processing basically consists of a few main components: the Swing text editing and project management application (app), the graphics libraries (core), and the build configurations for Linux, OSX, and Windows (build). Processing now has an Android mode which can export to Android projects but the Android code is essentially the core files re-written to using the Android drawing api rather than the Java api.</p>
+
+<p><img src="images/ProcessingArchitectureCropped.png">
+<sup><sup> [1] </sup></sup></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GSoC Proposal]]></title>
@@ -31,7 +56,7 @@ jonrose08@gmail.com</p>
 
 <p>I am a programmer with a passion for creating art and sound with code.  The road I have taken to discover my love for programming has not been short, or easy, but it feels good to be on track to launching a career in a field that I know will fascinate me forever. During my early 20’s, I was part of two start-up business ventures in between attending college courses at San Francisco State in broadcast and audio production. Although broadcast was not my calling, through the coursework for that major I discovered my passion for programming by learning systems like Processing and Max/MSP. This fall, I will be entering my final year at Chico State University where I am a computer science engineering major. Since discovering my deep interests in software engineering, I have been drawn to open source projects like Processing, Android, Arduino and Overtone. I am a github fanatic <a href="https://github.com/ghostandthemachine">[0]</a> and I have developed all my projects as open source on github.  Some of the projects I have created or worked on include: embedding Processing for Android in honeycomb applications <a href="https://github.com/ghostandthemachine/android-core-fragmented">[1]</a>, controlling Processing from Android <a href="https://github.com/ghostandthemachine/Control-Processing-from-Android">[2]</a>, OpenGL 3D scene graph library for Processing on Android <a href="https://github.com/ghostandthemachine/DroidGraphProcessing">[3]</a>, web application templates using Twitter Bootstrap, Ruby and Sinatra <a href="https://github.com/ghostandthemachine/sinatra-haml-bootstrap-fluid">[4]</a>, core commits to Overtone for GUI components <a href="https://github.com/overtone/overtone/blob/master/src/overtone/gui/dial.clj">[5]</a> and web documentation of UGens and Overtone for the Overtone website <a href="https://github.com/overtone/overtone-site">[6]</a>.</p>
 
-<h4>Which proposal are you interested in? What exactly do you intendto do? What will not be #### done? Feel free to submit a new one - however make sureto include a brief explanation. #### It&#8217;s also important to follow up on the mailinglist to ensure that there&#8217;s an appropriate #### mentor for your proposal.</h4>
+<h4>Which proposal are you interested in? What exactly do you intendto do? What will not be done? Feel free to submit a new one - however make sureto include a brief explanation. It&#8217;s also important to follow up on the mailinglist to ensure that there&#8217;s an appropriate mentor for your proposal.</h4>
 
 <p>I am applying for the Overtone Lightweight Clojure editor, repl, and documentation browser project through Clojure/Dev. With the proper configuration of dependencies and development environment, Overtone is a powerful and intuitive tool for learning sound design and composition. Recently, I hosted an Overtone workshop for my school’s Open Source club <a href="http://chicoteam.wordpress.com/2012/02/20/overtone-workshop/">[7]</a>. I hoped that the session would end with everyone in the workshop being able to enjoy a live coding jam session. In reality, however, the majority of the time was spent configuring various operating systems, editors, and dependency managers like cake and leinengine.  After hosting the workshop I realized that what the Overtone project would benefit from most is a development application which lets users only have to worry about coding sound and then run their projects with a single click. With this project, I plan to address this need by focusing on three main points during development.
 The first main focus is creating a lightweight editor and repl. These tools allow users to organize and manage their code for individual projects as well as take advantage of Clojure’s style of repl driven development. After discussion with the project mentors and on the Overtone mailing list, I think leveraging resources from a couple other successful open source projects will allow me to have the basic editor and repl running Overtone quickly. The Clooj <a href="https://github.com/arthuredelstein/clooj.git">[8]</a> project on github would provide an editor and repl written in Clojure which I would aim to combine with Seesaw <a href="https://github.com/daveray/seesaw">[9]</a>, a popular Java Swing library that I have experience using through my previous contributions to Overtone <a href="https://github.com/overtone/overtone/blob/master/src/overtone/gui/pianoroll.clj">[10]</a> <a href="https://github.com/overtone/overtone/blob/master/src/overtone/gui/stepinator.clj">[11]</a> <a href="https://github.com/overtone/overtone/blob/master/src/overtone/gui/dial.clj">[12]</a>. By using Clooj I will have the basic functionality of an editor from the beginning and Seesaw would allow for quick and efficient development of features unique to Overtone.
