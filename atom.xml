@@ -4,7 +4,7 @@
   <title><![CDATA[(( overtone sketchpad ) blog)]]></title>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/atom.xml" rel="self"/>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/"/>
-  <updated>2012-05-22T18:00:30-07:00</updated>
+  <updated>2012-05-22T18:02:05-07:00</updated>
   <id>http://ghostandthemachine.github.com/overtone-sketchpad/</id>
   <author>
     <name><![CDATA[Jon Rose]]></name>
@@ -12,22 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[How It's Made]]></title>
-    <link href="http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/10/how-its-made/"/>
-    <updated>2012-05-10T06:56:00-07:00</updated>
-    <id>http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/10/how-its-made</id>
-    <content type="html"><![CDATA[<p>One of the most exciting things to me, someone who got into programming through processing, is how well systems like lein/cake and repl driven development will help create a dev enviroment ideal for absolute beginners and experienced users alike.</p>
-
-<p><a href="processing.org">Processing</a> provides an environment where a young child could easily enter code to do basic math or string printing and simply hit &#8220;run&#8221;. While Processing targets &#8220;computer fundamentals in a visual context&#8221;, the ease with which users can incorporate external jar files makes it useful beyond just sketching sweet visual fx. Equally important, it allows students to focus on understanding language and design concepts rather than platforms, build processes, and dependencies. Systems like cake and lein will allow users to not have deal with the import process that Processing requires for external libraries minimizing not only the hassle of incorporating external libraries but also keeping the project source format and structure consistent for all users (which in turn makes sharing projects easier and more stable across different operating systems).</p>
-
-<p>I worked a bit with Processing last summer on a <a href="https://github.com/ghostandthemachine/DroidGraphProcessing">3D scene graph</a> project for Android and spent a bit of time digging through the source and I think it would be helpful to take a quick look at the Processing projects design [1]. Processing basically consists of a few main components: the Swing text editing and project management application (app), the graphics libraries (core), and the build configurations for Linux, OSX, and Windows (build). Processing now has an Android mode which can export to Android projects but the Android code is essentially the core files re-written to using the Android drawing api rather than the Java api.</p>
-
-<p><img src="images/ProcessingArchitectureCropped.png">
-<sup><sup> [1] </sup></sup></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[GSoC Proposal]]></title>
