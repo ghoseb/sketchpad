@@ -4,7 +4,7 @@
   <title><![CDATA[(( overtone sketchpad ) blog)]]></title>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/atom.xml" rel="self"/>
   <link href="http://ghostandthemachine.github.com/overtone-sketchpad/"/>
-  <updated>2012-05-22T17:59:50-07:00</updated>
+  <updated>2012-05-22T18:00:30-07:00</updated>
   <id>http://ghostandthemachine.github.com/overtone-sketchpad/</id>
   <author>
     <name><![CDATA[Jon Rose]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Roadmap]]></title>
-    <link href="http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/22/roadmap/"/>
-    <updated>2012-05-22T17:41:00-07:00</updated>
-    <id>http://ghostandthemachine.github.com/overtone-sketchpad/blog/2012/05/22/roadmap</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[How It's Made]]></title>
