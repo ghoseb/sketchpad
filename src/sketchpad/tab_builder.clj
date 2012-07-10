@@ -3,26 +3,26 @@
 					(java.io File StringReader BufferedWriter OutputStreamWriter FileOutputStream)
 					(javax.swing JButton JOptionPane JWindow ImageIcon)
 					(javax.swing.event DocumentListener))
-	(:use [sketchpad tab-manager project-manager option-windows editor-component file-manager button-tab prefs]
+	(:use [sketchpad tab-manager project-manager option-windows editor-component 
+        file-manager button-tab prefs]
 				[clojure pprint]
 				[seesaw meta core border])
 	(:require [clojure.string :as str]
-			[sketchpad.project-manager :as project])
-	)
+			[sketchpad.project-manager :as project]))
 
-(defn new-file-tab! 
+(defn new-file-tab!
 	([app-atom file proj] (new-file-tab! app-atom file proj -1))
 	([app-atom file proj i]
 	(let [app @app-atom
 				project (@(app :project-map) proj)
 				project-id (:id project)
 				project-color (:project-color project)]
-		(if (text-file? file)
+		(when (text-file? file)
 			(if (open? (app :editor-tabbed-panel) (file-name file))
 				;; already open so just show it
 				(show-tab! (app :editor-tabbed-panel) (index-of (app :editor-tabbed-panel) (file-name file)))
 				;; otherwise create a new tab and set the syntax style
-				(do 
+				(do
 					(let [tabbed-panel (app :editor-tabbed-panel)
 								container (make-editor-component app-atom)
 								; container (make-quil-editor-component app-atom)
@@ -42,7 +42,7 @@
 						(if (= i -1)
 							(add-tab! (app :editor-tabbed-panel) new-file-name container)
 							(insert-tab! (app :editor-tabbed-panel) new-file-name container i))
-						
+
 						;; set custom tab
 						(let [index-of-new-tab (index-of (app :editor-tabbed-panel) new-file-name)
 									tab (button-tab app tabbed-panel index-of-new-tab project-color)
@@ -72,17 +72,17 @@
 																			(let [idx (index-of-component (app :editor-tabbed-panel) container)
 																					answer (close-or-save-current-dialogue (title-at tabbed-panel idx))]
 																				;; if the tab which is being close is dirty
-																				(cond 
+																				(cond
 																					;; save and close
 																					(= answer 0)
 																						(do
-																							(save-file app rsta idx) 
+																							(save-file app rsta idx)
 																							(swap! (app :current-files) (fn [files] (dissoc files idx)))
 																							(project/remove-buffer-from-project! app-atom proj new-file-name)
 																							(remove-tab! (app :editor-tabbed-panel) idx))
 																					;; don't save and close
 																					(= answer 1)
-																						(do 
+																						(do
 																							(swap! (app :current-files) (fn [files] (dissoc files idx)))
 																							(project/remove-buffer-from-project! app-atom proj new-file-name)
 																							(remove-tab! (app :editor-tabbed-panel) idx))

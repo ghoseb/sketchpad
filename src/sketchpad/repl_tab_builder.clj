@@ -6,8 +6,7 @@
 	(:use [sketchpad project-manager buffer-edit option-windows repl utils tab-manager repl-component repl-button-tab prefs]
 				[clojure pprint]
 				[seesaw meta core border color])
-	(:require [clojure.string :as str])
-	)
+	(:require [clojure.string :as str]))
 
 (def mouse-over-color (color 200 200 200))
 (def base-color (color 150 150 150))
@@ -18,13 +17,13 @@
 (defn add-mouse-handlers [app-atom panel rsta btn repl-component current-tab-color]
 	;; add tab listeners here because they use tab-manager functions and we need
 	;; to include the button tab ns. This avoids the cyclic loading
-	(listen btn 
+	(listen btn
 		:mouse-entered (fn [e] (swap! current-tab-color (fn [_] mouse-over-color)))
 		:mouse-exited (fn [e] (swap! current-tab-color (fn [_] base-color)))
 		:mouse-clicked (fn [e] (let [idx (.indexOfComponent panel repl-component)
 												  yes-no-option (close-repl-dialogue)]
 											(if (= yes-no-option 0)
-												(do 
+												(do
 													;; remove the tab from the tabbed panel
 													(remove-repl-tab! panel idx)
 													;; remove the repl from the projects map
@@ -32,7 +31,7 @@
 ;;
 ;; create a new repl tab from an outside process
 ;;
- (defn new-repl-tab! 
+ (defn new-repl-tab!
  	([app-atom]
  	(let [app @app-atom
  				cur-project-path (get-current-project app-atom)
@@ -62,7 +61,7 @@
 
  			;; set the component in the new tab
  			(.setTabComponentAt tabbed-panel index-of-new-tab tab)
-			
+
  			(println "Added new repl: " tab-title)
 
 		    ;; attach handlers
